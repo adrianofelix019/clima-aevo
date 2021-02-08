@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitor Climático</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="form">
+      <input type="text" id="query">
+      <input class="button" type="button" value="Buscar" onclick="start()">
+    </div>
+  </header>
+  
+  <main>
+    <div class="app">
+      <span id="error"></span>
+
+      <div>
+        <img src="./img/weather-forecast.svg" alt="Localização" class="icon">
+        <span id="city-temperature"></span>
+      </div>
+
+      <div>
+        <img src="./img/feelslike.svg" alt="Sensação termica" class="icon">
+        <span id="feels-like"></span>
+      </div>
+
+      <div>
+        <img src="./img/humidity.svg" alt="Umidade" class="icon">
+        <span id="humidity"></span>
+      </div>
+
+      <div>
+        <img src="./img/wind-speed.svg" alt="Velocidade do vento" class="icon">
+        <span id="wind-speed"></span>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
